@@ -1,9 +1,9 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
-class Project extends Model {}
+class Concert extends Model {}
 
-Project.init(
+Concert.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -40,8 +40,8 @@ Project.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'project',
+    modelName: 'concert',
   }
 );
 
-module.exports = Project;
+module.exports = Concert;
