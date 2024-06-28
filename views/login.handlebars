@@ -1,18 +1,18 @@
-<div class="row">
-  <div class="col-md-6">
+<div class="row wrapper">
+  <div class="col-md-6 ">
     <h2>Login</h2>
 
     <form class="form login-form">
       <div class="form-group">
-        <label for="email-login">email:</label>
-        <input class="form-input" type="text" id="email-login" />
+        <input class="form-input" type="text" id="email-login" placeholder="email" />
+        <i class='bx bxs-user'></i>
       </div>
       <div class="form-group">
-        <label for="password-login">password:</label>
-        <input class="form-input" type="password" id="password-login" />
+        <input class="form-input" type="password" id="password-login" placeholder="password" />
+        <span toggle="#password-login" class="bx bxs-show toggle-password"></span>
       </div>
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">login</button>
+        <button class="btn btn-primary" type="submit">Login</button>
       </div>
     </form>
   </div>
@@ -21,47 +21,22 @@
 
     <form class="form signup-form">
       <div class="form-group">
-        <label for="name-signup">name:</label>
-        <input class="form-input" type="text" id="name-signup" />
+        <input class="form-input" type="text" id="name-signup" placeholder="name" />
+        <i class='bx bxs-user'></i>
       </div>
       <div class="form-group">
-        <label for="email-signup">email:</label>
-        <input class="form-input" type="text" id="email-signup" />
+        <input class="form-input" type="text" id="email-signup" placeholder="email"/>
+        <i class='bx bxs-envelope'></i>
       </div>
       <div class="form-group">
-        <label for="password-signup">password:</label>
-        <input class="form-input" type="password" id="password-signup" />
+        <input class="form-input" type="password" id="password-signup" placeholder="password" />
+        <span toggle="#password-signup" class="bx bxs-show toggle-password"></span>
       </div>
       <div class="form-group">
-        <button class="btn btn-primary" type="submit">signup</button>
+        <button class="btn btn-primary" type="submit">Signup</button>
       </div>
     </form>
   </div>
 </div>
 
-{{!-- 
-<section class="container-centered">
-        <div class="wrapper">
-        <form>
-
-            <h2>Login</h2>
-
-            <div class="input-box">
-                <input type="text" placeholder="username" id="email-login" required>
-                <i class='bx bxs-user'></i>
-            </div>
-
-            <div class="input-box">
-                <input id="password-login" type="password" name="password">
-                <span toggle="#password-login" class="bx bxs-show toggle-password"></span>
-            </div>
-            
-            <button type="submit" class="btn">Login</button>
-
-            <div class="register-link">
-                <p>Dont have an account? <a href="#">Register</a></p>
-            </div>
-        </form>
-    </div>
-    </section>--}}
 <script src="./js/login.js"></script> 
