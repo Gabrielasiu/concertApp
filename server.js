@@ -5,6 +5,15 @@ const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
 
+// //npm login
+// const connect = require("connect"); 
+// //const postmark = require("postmark")(POSTMARK_API_KEY);
+// const postgres = require("pg");
+
+// const login = require("login").postgresql;
+// const appExpress = express.createServer();
+
+
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 

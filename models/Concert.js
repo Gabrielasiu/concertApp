@@ -1,6 +1,8 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/connection');
 
+
+
 class Concert extends Model {}
 
 Concert.init(
@@ -40,7 +42,7 @@ Concert.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'concert',
+    modelName: 'concert', //indica el nombre que le pusimos a la table
   }
 );
 
