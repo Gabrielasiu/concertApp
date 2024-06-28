@@ -17,7 +17,7 @@ router.post('/', withAuth, async (req, res) => {
 
 router.delete('/:id', withAuth, async (req, res) => {
   try {
-    const concertData = await Project.destroy({
+    const concertData = await Concert.destroy({
       where: {
         id: req.params.id,
         user_id: req.session.user_id,
@@ -25,7 +25,7 @@ router.delete('/:id', withAuth, async (req, res) => {
     });
 
     if (!concertData) {
-      res.status(404).json({ message: 'No project found with this id!' });
+      res.status(404).json({ message: 'No concert found with this id!' });
       return;
     }
 

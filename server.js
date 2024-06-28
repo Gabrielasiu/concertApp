@@ -4,6 +4,9 @@ const session = require('express-session');
 const exphbs = require('express-handlebars');
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
+const morgan = require('morgan');
+const rfs = require('rotating-file-stream');
+const dirPath = path.join(__dirname, '/logs');
 
 // //npm login
 // const connect = require("connect"); 
@@ -37,6 +40,14 @@ const sess = {
     db: sequelize
   })
 };
+
+const accessLogStream = rfs.createStream('apiRequests.log', {
+  interval: '1d',
+  path: dirPath,
+});
+
+app.use(morgan('combined', { stream: accessLogStream }));
+
 
 app.use(session(sess));
 
