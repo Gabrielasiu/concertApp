@@ -1,17 +1,142 @@
 [
   {
-    "name": "Music Near Me",
+    "artist": "Niall Horan",
     "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "needed_funding": 5000
+    "cost": "$265.00",
+    "date": "September 20th 2024",
+    "location": "Mexico City"
   },
   {
-    "name": "The Ultimate Tech Quiz",
-    "description": "A web app that will give users 10 new technical questions each day and track their progress in things like programming, cybersecurity, database architecture, and more!",
-    "needed_funding": 10000
+    "artist": "P!nk",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost": "$57.00- $330.00",
+    "date": "October 3rd 2024",
+    "location": "New Jersey, NY"
   },
   {
-    "name": "Roll 'Em Up",
-    "description": "A game for Windows and macOS where players move a ball through a series of increasingly challenging mazes.",
-    "needed_funding": 800
+    "artist": "Imagine Dragons",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost": "$60.00- $500.00",
+    "date": "August 2th 2024",
+    "location": "New York City, NY"
+  },
+  {
+    "artist": "Post Malone",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost": "$89.00- $328.00",
+    "date": "October 5th 2024",
+    "location": "New York City, NY"
+  },
+  {
+    "artist": "Luke Combs",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost": "$162.00- $567.00",
+    "date": "July 20th 2024",
+    "location": "New Jersey, NY"
+  },
+  {
+    "artist": "Junior H",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$58.00- $330.00",
+    "date": "July 19th 2024",
+    "location": "Chula Vista, CA"
+  },
+  {
+    "artist": "Peso Pluma",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$58.00- $330.00",
+    "date": "September 5th 2024",
+    "location": "Chula Vista, CA"
+  },
+  {
+    "artist": "Danny Ocean",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$39.00- $300.00",
+    "date": "September 27th 2024",
+    "location": "San Siego, CA"
+  },
+  {
+    "artist": "Shakira",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$171.00- $297.00",
+    "date": "November 30th 2024",
+    "location": "Toronto, ON"
+  },
+  {
+    "artist": "Ludacris",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$39.00-79.00",
+    "date": "July 19th 2024",
+    "location": "Chandle, AZ"
+  },
+  {
+    "artist": "Janet Jackson",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$38.00- $499.00",
+    "date": "July 29th 2024",
+    "location": "Boston, MA"
+  },
+  {
+    "artist": "Taylor Swift",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$58.00- $330.00",
+    "date": "October 19th 2024",
+    "location": "Miami, FL"
+  },
+  {
+    "artist": "Blink-182",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$58.00- $330.00",
+    "date": "July 3rd 2024",
+    "location": "Las Vegas, NV"
+  },
+  {
+    "artist": "FEIDD",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$58.00- $330.00",
+    "date": "July 19th 2024",
+    "location": "Orlando, FL"
+  },
+  {
+    "artist": "Fuerza Regida",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$58.00- $330.00",
+    "date": "July 1st 2024",
+    "location": "Seattle, WA"
+  },
+  {
+    "artist": "Sabrina Carpenter",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$78.00- $530.00",
+    "date": "October 2nd 2024",
+    "location": "Hartford, CT"
+  },
+  {
+    "artist": "Cigarettes After Sex",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$93.00- $327.00",
+    "date": "October 5th 2024",
+    "location": "Oakland, CA"
+  },
+  {
+    "artist": "Billie Eilish",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$89.00- $530.00",
+    "date": "October 11th 2024",
+    "location": " Boston, MA"
+  },
+  {
+    "artist": "Childish Gambino",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$55.00- $430.00",
+    "date": "November 13th 2024",
+    "location": "Berlin, DE"
+  },
+  {
+    "artist": "Chayanne",
+    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
+    "cost":"$67.00- $197.00",
+    "date": "November 13th 2024",
+    "location": "Boston, MA"
   }
 ]
