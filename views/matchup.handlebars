@@ -1,0 +1,13 @@
+<!-- Loop over each object in the projects array -->
+{{#each matchups as | matchup | }}
+<div>
+  <h1>{{matchup.artistA}} VS {{matchup.artistB}}</h1>
+  <p>votos para {{matchup.artistA}}: {{matchup.votesA}}</p>
+  <p>votos para {{matchup.artistB}}: {{matchup.votesB}}</p>
+  <button>VOTE {{matchup.artistA}}</button>
+    <button>VOTE {{matchup.artistB}}</button>
+  
+</div>
+{{/each}}
+
+<script src="/public/js/matchup.js"></script>

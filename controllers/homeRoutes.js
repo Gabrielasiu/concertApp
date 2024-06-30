@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Concert, User } = require('../models');
+const { Concert, User, Matchup } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -18,9 +18,9 @@ router.get('/', async (req, res) => {
     const concerts = concertData.map((concert) => concert.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage', { 
-      concerts, 
-      logged_in: req.session.logged_in 
+    res.render('homepage', {
+      concerts,
+      logged_in: req.session.logged_in
     });
   } catch (err) {
     res.status(500).json(err);
@@ -77,6 +77,32 @@ router.get('/login', (req, res) => {
   }
 
   res.render('login');
+});
+
+// router.get('/profile/matchup', withAuth, async (req, res) => {
+
+
+//   res.render('matchup');
+// })
+router.get('/matchup', async (req, res) => {
+  try {
+    // Get all projects and JOIN with user data
+    const matchupData = await Matchup.findAll({
+
+    });
+console.log(matchupData)
+
+    // Serialize data so the template can read it
+    const matchups = matchupData.map((matchup) => matchup.get({ plain: true }));
+
+    // Pass serialized data and session flag into template
+    res.render('matchup', {
+      matchups,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
 });
 
 module.exports = router;
