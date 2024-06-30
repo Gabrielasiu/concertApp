@@ -3,7 +3,7 @@ const sequelize = require('../config/connection');
 
 
 
-class Concert extends Model {}
+class Concert extends Model { }
 
 Concert.init(
   {
@@ -13,7 +13,7 @@ Concert.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    name: {
+    artist: {
       type: DataTypes.STRING,
       allowNull: false,
     },
@@ -32,7 +32,7 @@ Concert.init(
     user_id: {
       type: DataTypes.INTEGER,
       references: {
-        model: 'user',
+        model: 'users',
         key: 'id',
       },
     },

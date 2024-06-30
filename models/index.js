@@ -1,5 +1,6 @@
 const User = require('./User');
 const Concert = require('./Concert');
+const Matchup = require('./Matchup');
 
 User.hasMany(Concert, {
   foreignKey: 'user_id',
@@ -10,4 +11,4 @@ Concert.belongsTo(User, {
   foreignKey: 'user_id'
 });
 
-module.exports = { User, Concert };
+module.exports = { User, Concert, Matchup };
