@@ -3,6 +3,21 @@ const { Matchup } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 
+
+
+router.get('/', /*withAuth,*/ async (req, res) => {
+  try {
+    const newMatchup = await Matchup.findAll({
+ 
+      // user_id: req.session.user_id,
+    });
+
+    res.status(200).json(newMatchup);
+  } catch (err) {
+    res.status(400).json(err);
+  }
+});
+
 router.post('/', /*withAuth,*/ async (req, res) => {
   try {
     const newMatchup = await Matchup.create({
