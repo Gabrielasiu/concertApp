@@ -1,13 +1,24 @@
-<!-- Loop over each object in the projects array -->
+{{!-- <!-- Loop over each object in the projects array -->
 {{#each matchups as | matchup | }}
 <div>
   <h1>{{matchup.artistA}} VS {{matchup.artistB}}</h1>
-  <p>votos para {{matchup.artistA}}: {{matchup.votesA}}</p>
-  <p>votos para {{matchup.artistB}}: {{matchup.votesB}}</p>
-  <button>VOTE {{matchup.artistA}}</button>
-    <button>VOTE {{matchup.artistB}}</button>
+  <p class="numberOfVotes"> Votes for {{matchup.artistA}}: {{matchup.votesA}}</p>
+  <p class="numberOfVotesB"> Votes for {{matchup.artistB}}: {{matchup.votesB}}</p>
+  <button id="votes-a" >VOTE {{matchup.artistA}}</button>
+    <button id="votes-b">VOTE {{matchup.artistB}}</button>
   
 </div>
 {{/each}}
 
-<script src="/public/js/matchup.js"></script>
+<script src="/js/matchup.js"></script> --}}
+<!-- Loop over each object in the projects array -->
+{{#each matchups as |matchup|}}
+<div>
+  <h1>{{matchup.artistA}} VS {{matchup.artistB}}</h1>
+  <p class='numberOfVotes'>Votes for {{matchup.artistA}}: <span class='votes-count'>{{matchup.votesA}}</span></p>
+  <p class='numberOfVotes'>Votes for {{matchup.artistB}}: <span class='votes-count'>{{matchup.votesB}}</span></p>
+  <button class= "votes" id='{{matchup.id}}-a' data-matchup ='{{matchup.id}}' data-artistA ='{{matchup.artistA}}'>VOTE {{matchup.artistA}}</button>
+  <button class= "votes" id='{{matchup.id}}-b' data-matchup ='{{matchup.id}}' data-artistB ='{{matchup.artistB}}'>VOTE {{matchup.artistB}}</button>
+</div> 
+{{/each}}
+<script src='js/matchup.js'></script>
