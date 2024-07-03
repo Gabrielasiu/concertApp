@@ -1,0 +1,26 @@
+[
+    {
+        "artistA": "Imagine Dragons",
+        "artistB": "Blink-182",
+        "votesA": "22",
+        "votesB": "20"
+    },
+    {
+        "artistA": "Shakira",
+        "artistB": "Beyonce",
+        "votesA": "27",
+        "votesB": "30"
+    },
+    {
+        "artistA": "Peso Pluma",
+        "artistB": "Junior H",
+        "votesA": "22",
+        "votesB": "20"
+    },
+    {
+        "artistA": "Taylor Swift",
+        "artistB": "Sabrina Carpenter",
+        "votesA": "3300",
+        "votesB": "2000"
+    }
+]
