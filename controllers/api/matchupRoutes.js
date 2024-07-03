@@ -51,4 +51,27 @@ router.delete('/:id', withAuth, async (req, res) => {
   }
 });
 
+router.put('/matchup', async (req, res) => {
+  
+  const matchupId = req.body.matchupId
+  const voteType = req.body.voteType
+  
+  try { 
+    const matchup = await Matchup.findByPk( matchupId)
+    if (voteType === 'a'){
+      matchup.votesA +=1;
+    } else if (voteType === 'b'){
+      matchup.votesB += 1;
+    } 
+
+    await matchup.save();
+
+    res.status(200).json({message:"Vote registered successfully"});
+
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ success: false, message: 'Error updating the votes' });
+  }
+});
+
 module.exports = router;
