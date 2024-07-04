@@ -1,54 +1,56 @@
-const submitButton = document.querySelector('#create-button');
-const newFormHandler = async (event) => {
-  event.preventDefault();
-  console.log('hello');
+//NO LO NECESITAMOS ESTE ARCHIVO
 
-  const name = document.querySelector('#concert-name').value.trim();
-  const needed_funding = document.querySelector('#concert-funding').value.trim();
-  const description = document.querySelector('#concert-desc').value.trim();
+// const submitButton = document.querySelector('#create-button');
+// const newFormHandler = async (event) => {
+//   event.preventDefault();
+//   console.log('hello');
 
-  if (name && needed_funding && description) {
-    const response = await fetch(`/api/concert`, {
-      method: 'POST',
-      body: JSON.stringify({ name, needed_funding, description }),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
+//   const name = document.querySelector('#concert-name').value.trim();
+//   const needed_funding = document.querySelector('#concert-funding').value.trim();
+//   const description = document.querySelector('#concert-desc').value.trim();
 
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to create concert');
-    }
-  }
-};
+//   if (name && needed_funding && description) {
+//     const response = await fetch(`/api/concert`, {
+//       method: 'POST',
+//       body: JSON.stringify({ name, needed_funding, description }),
+//       headers: {
+//         'Content-Type': 'application/json',
+//       },
+//     });
 
-const delButtonHandler = async (event) => {
-  if (event.target.hasAttribute('data-id')) {
-    const id = event.target.getAttribute('data-id');
+//     if (response.ok) {
+//       document.location.replace('/profile');
+//     } else {
+//       alert('Failed to create concert');
+//     }
+//   }
+// };
 
-    const response = await fetch(`/api/concert/${id}`, {
-      method: 'DELETE',
-    });
+// const delButtonHandler = async (event) => {
+//   if (event.target.hasAttribute('data-id')) {
+//     const id = event.target.getAttribute('data-id');
 
-    if (response.ok) {
-      document.location.replace('/profile');
-    } else {
-      alert('Failed to delete concert');
-    }
-  }
-};
+//     const response = await fetch(`/api/concert/${id}`, {
+//       method: 'DELETE',
+//     });
 
-function hello(event){
-  event.preventDefault()
-  console.log('goodbye');
-}
-document
-  .querySelector('.new-concert-form')
-  .addEventListener('submit' , newFormHandler);
-// submitButton.addEventListener('submit', hello);
+//     if (response.ok) {
+//       document.location.replace('/profile');
+//     } else {
+//       alert('Failed to delete concert');
+//     }
+//   }
+// };
 
-document
-  .querySelector('.concert-list')
-  .addEventListener('click', delButtonHandler);
+// function hello(event){
+//   event.preventDefault()
+//   console.log('goodbye');
+// }
+// document
+//   .querySelector('.new-concert-form')
+//   .addEventListener('submit' , newFormHandler);
+// // submitButton.addEventListener('submit', hello);
+
+// document
+//   .querySelector('.concert-list')
+//   .addEventListener('click', delButtonHandler);

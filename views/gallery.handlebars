@@ -12,35 +12,38 @@
     <button class="btn btn-primary">Fund this Project!</button>
   </p>
 </div> --}}
-<h3 class="text-center">Select 2 options to create a new matchup</h3>
+<h3 class="text-center">Select <span id="option">2</span> options to create a new matchup</h3>
     <div  class="container align-middle">
         <div class="row justify-content-center">
     <div class="slider-container">
         <div class="left-arrow"><i class='bx bxs-chevron-left' style="font-size:35px"></i></div>
         <div class="slider-content" id='slider-content'>
+              
+              
+            {{#each concerts as |concert|}}
+              {{!-- PRUEBA PARA VER SI SALE ALGO EN LAS TARJETITAS --}}
           <div class='slide'>
             <div class="media">
-              <img src="assets/musician1.jpeg" alt="">
+              <img src={{concert.image}} alt="Taylor Swift The eras Tour">
             </div>
             <div class="card-sections">
-              
               <div class="upper-section">
-                <div class="wishlist"><i class='bx bx-heart'></i></div>
+                <div class="wishlist" id={{concert.id}} data-isSelected="false" ><i class='bx bxs-heart'></i></div>
               </div>
-              
               <div class="lower-section">
                 <div class="card-caption">
-                  <h4 class="artist-name">Lorem Ipsum</h4>
-                  <p class="category">Category: Headliner</p>
-                  <p class="info">Extra info: lorem ipsum sit amet</p>
+                  <h4 class="artist-name">{{concert.artist}}</h4>
+                  <p class="category">ESTE ES EL DE PRUEBA AHORITA NO APARECE NADA</p>
+                  <p class="info">{{concert.description}}</p>
                 </div>
               </div>
-              
             </div>
           </div>
+         {{/each}}
+
+          {{!-- AQUÍ ACABA LA PRUEBA --}}
           
-          
-          <div class='slide'>
+          {{!-- <div class='slide'>
             <div class="media">
               <img src="assets/musician2.jpeg" alt="">
             </div>
@@ -111,12 +114,16 @@
               </div>
               
             </div>
-          </div>
+          </div> --}}
         
           <div class="slider-content-background"></div>
         </div>
         <div class="right-arrow"><i class='bx bxs-chevron-right' style="font-size:35px"></i></div>
       </div>
+               <button type="button" id="newMatchButton" class="btn btn-info py-3 px-4" >Create new matchup!</button>
+
     </div>
 </div>
+
       <script src="js/script.js"></script>
+      <script src="js/gallery.js"></script>

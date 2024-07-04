@@ -404,11 +404,14 @@ a.click-div {
   background: rgba(0,0,0,0.3);
   border-radius: 50%;
   transition: color 0.2s ease-in-out, background 0.2s ease-in-out ;
+
 }
 .upper-section .wishlist:hover{
   color: rgb(244, 129, 129);
   background: rgba(0,0,0,0.4);
 }
+
+
 
 @media screen and (max-width:620px){
 .slide.position-1, .slide.position-5 {
@@ -445,4 +448,8 @@ a.click-div {
     left: 150% !important;
     transform: translate(-50%, 0) rotateY(0deg) scale(0.7, 0.7) !important;
   }
+}
+
+#newMatchButton {
+  display: none;
 }
