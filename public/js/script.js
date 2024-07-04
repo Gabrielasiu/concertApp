@@ -250,3 +250,5 @@ function getRandomColorFromList(colorList) {
     const randomIndex = Math.floor(Math.random() * colorList.length);
     return colorList[randomIndex];
 }
+
+//AÑADIR LA FUNCIÓN PARA DARLE <3 Y QUE SE SELECCIONE 

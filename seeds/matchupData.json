@@ -22,5 +22,12 @@
         "artistB": "Sabrina Carpenter",
         "votesA": "3300",
         "votesB": "2000"
+    },
+    {
+        "artistA": "Twenty One Pilots",
+        "artistB": "Linkin Park",
+        "votesA": "3300",
+        "votesB": "2000"
     }
+
 ]

@@ -4,7 +4,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
   try {
-    // Get all projects and JOIN with user data
+    // Get all concerts and JOIN with user data
     const concertData = await Concert.findAll({
       include: [
         {
@@ -18,8 +18,8 @@ router.get('/', async (req, res) => {
     const concerts = concertData.map((concert) => concert.get({ plain: true }));
 
     // Pass serialized data and session flag into template
-    res.render('homepage', {
-      concerts,
+    res.render('login', {
+      //concerts,
       logged_in: req.session.logged_in
     });
   } catch (err) {
@@ -105,20 +105,32 @@ console.log(matchupData)
   }
 });
 
-router.get('/gallery', withAuth, async (req, res) => {
+//postear galeria
+
+router.get('/gallery', async (req, res) => {
   try {
-    // Find the logged in user based on the session ID
-    // const userData = await User.findByPk(req.session.user_id, {
-    //   attributes: { exclude: ['password'] },
-    //   include: [{ model: Concert }],
-    // });
+    // Get all projects and JOIN with user data
+    const concertData = await Concert.findAll({
 
-    // const user = userData.get({ plain: true });
+    });
 
-    res.render('gallery');
+
+    // Serialize data so the template can read it
+    const concerts = concertData.map((concert) => concert.get({ plain: true }));
+console.log("conciertos", concerts[0])
+    // Pass serialized data and session flag into template
+    res.render('gallery', {
+      concerts: concerts, //como lo identifoc en el handlebar
+      logged_in: req.session.logged_in
+    });
   } catch (err) {
     res.status(500).json(err);
   }
 });
 
+
+
 module.exports = router;
+
+
+//VIENDO SI PODEMOS POSTEAR EL ARTISTA EN LA GALERIA atraves de insomnia 

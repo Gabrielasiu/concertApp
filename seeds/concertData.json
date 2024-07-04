@@ -2,37 +2,27 @@
   {
     "artist": "Niall Horan",
     "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost": "$265.00",
-    "date": "September 20th 2024",
-    "location": "Mexico City"
+    "image":"./assets/musician1.jpeg"
   },
   {
     "artist": "P!nk",
     "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost": "$57.00- $330.00",
-    "date": "October 3rd 2024",
-    "location": "New Jersey, NY"
+    "image": "./assets/musician2.jpeg"
   },
   {
     "artist": "Imagine Dragons",
     "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost": "$60.00- $500.00",
-    "date": "August 2th 2024",
-    "location": "New York City, NY"
+    "image": "./assets/musician3.jpeg"
   },
   {
     "artist": "Post Malone",
     "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost": "$89.00- $328.00",
-    "date": "October 5th 2024",
-    "location": "New York City, NY"
+    "image" :"./assets/musician4.jpeg"
   },
   {
     "artist": "Luke Combs",
     "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost": "$162.00- $567.00",
-    "date": "July 20th 2024",
-    "location": "New Jersey, NY"
+    "image":"./assets/musician5.jpeg"
   },
   {
     "artist": "Junior H",
@@ -107,16 +97,12 @@
   {
     "artist": "Sabrina Carpenter",
     "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$78.00- $530.00",
-    "date": "October 2nd 2024",
-    "location": "Hartford, CT"
+    "image":"./assets/musician1.jpeg"
   },
   {
     "artist": "Cigarettes After Sex",
     "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$93.00- $327.00",
-    "date": "October 5th 2024",
-    "location": "Oakland, CA"
+    "image":"./assets/musician1.jpeg"
   },
   {
     "artist": "Billie Eilish",

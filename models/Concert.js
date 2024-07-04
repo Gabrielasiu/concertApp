@@ -1,4 +1,4 @@
-const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes, STRING } = require('sequelize');
 const sequelize = require('../config/connection');
 
 
@@ -18,6 +18,9 @@ Concert.init(
       allowNull: false,
     },
     description: {
+      type: DataTypes.STRING,
+    },
+    image: {
       type: DataTypes.STRING,
     },
     date_created: {
