@@ -7,6 +7,11 @@ const heartButton = document.querySelectorAll('.wishlist');
 const spanOption = document.querySelector('#option');
 let selectedCounter = 0
 const matchupBtn = document.getElementById('newMatchButton');
+const matchupBody = {
+    user_id: localStorage.getItem("userId"),
+    votesA: 0,
+    votesB: 0
+}
 
 heartButton.forEach(button => {
     button.addEventListener('click', async (event) => {
@@ -20,6 +25,16 @@ heartButton.forEach(button => {
                 button.dataset.isselected = "true"
                 selectedCounter++
                 spanOption.textContent = Number(spanOption.textContent) - 1
+                if (selectedCounter === 1) {
+                    matchupBody.artistA = button.dataset.artist
+                }
+                if (selectedCounter === 2) {
+                    matchupBody.artistB = button.dataset.artist
+                }
+                //hhacer eso para imagenes
+                //seguir la logica de esta 
+                //agregar en modelo imagen a imagen bv y en handle bars
+
             }
         } else {
             button.style.color = "white"
@@ -38,3 +53,18 @@ heartButton.forEach(button => {
 });
 
 
+matchupBtn.addEventListener('click', async (event) => {
+    const response = await fetch('/api/matchup', {
+        method: 'POST',
+        body: JSON.stringify(matchupBody), //siempre se manda un objeto. El matchup body ya es una constante que es un objeto 
+        headers: { 'Content-Type': 'application/json' },
+    });
+
+    if (response.ok) {
+        document.location.replace('/matchup');
+    } else {
+        alert(response.statusText);
+    }
+
+    console.log(matchupBody);
+});

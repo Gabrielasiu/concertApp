@@ -13,7 +13,11 @@ const loginFormHandler = async (event) => {
       headers: { 'Content-Type': 'application/json' },
     });
 
-    if (response.ok) {
+    if (response.ok) { 
+      const data=await response.json();
+      console.log("datajson", data);
+      console.log(data.user.id)
+      localStorage.setItem("userId", data.user.id)
       // If successful, redirect the browser to the profile page
       document.location.replace('/profile');
     } else {

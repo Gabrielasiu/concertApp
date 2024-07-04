@@ -18,6 +18,7 @@ router.get('/', /*withAuth,*/ async (req, res) => {
   }
 });
 
+//ruta para crear el matchup 
 router.post('/', /*withAuth,*/ async (req, res) => {
   try {
     const newMatchup = await Matchup.create({

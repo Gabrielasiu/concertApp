@@ -21,14 +21,13 @@
               
               
             {{#each concerts as |concert|}}
-              {{!-- PRUEBA PARA VER SI SALE ALGO EN LAS TARJETITAS --}}
           <div class='slide'>
             <div class="media">
-              <img src={{concert.image}} alt="Taylor Swift The eras Tour">
+              <img src={{concert.image}} alt="">
             </div>
             <div class="card-sections">
               <div class="upper-section">
-                <div class="wishlist" id={{concert.id}} data-isSelected="false" ><i class='bx bxs-heart'></i></div>
+                <div class="wishlist" id={{concert.id}} data-artist ='{{concert.artist}}' data-isSelected="false" ><i class='bx bxs-heart'></i></div>
               </div>
               <div class="lower-section">
                 <div class="card-caption">
@@ -41,80 +40,7 @@
           </div>
          {{/each}}
 
-          {{!-- AQUÍ ACABA LA PRUEBA --}}
-          
-          {{!-- <div class='slide'>
-            <div class="media">
-              <img src="assets/musician2.jpeg" alt="">
-            </div>
-            <div class="card-sections">
-              <div class="upper-section">
-                <div class="wishlist"><i class='bx bx-heart' ></i></div>
-              </div>
-              <div class="lower-section">
-                <div class="card-caption">
-                  <h4 class="artist-name">Lorem Ipsum</h4>
-                  <p class="category">Category: Headliner</p>
-                  <p class="info">Extra info: lorem ipsum sit amet</p>
-                </div>
-              </div>
-            </div>
-              
-            </div>
-          <div class='slide'>
-            <div class="media">
-              <img src="assets/musician3.jpeg" alt="">
-            </div>
-            <div class="card-sections">
-              
-              <div class="upper-section">
-                <div class="wishlist"><i class='bx bx-heart' ></i></div>
-              </div>
-              
-              <div class="lower-section">
-                <div class="card-caption">
-            <h4 class="artist-name">Lorem Ipsum</h4>
-            <p class="category">Category: Headliner</p>
-            <p class="info">Extra info: lorem ipsum sit amet</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class='slide'>
-            <div class="media">
-              <img src="assets/musician4.jpeg" alt="">
-            </div>
-            <div class="card-sections">
-              <div class="upper-section">
-                <div class="wishlist"><i class='bx bx-heart' ></i></div>
-              </div>
-              <div class="lower-section">
-                <div class="card-caption">
-                  <h4 class="artist-name">Lorem Ipsum</h4>
-                  <p class="category">Category: Headliner</p>
-                  <p class="info">Extra info: lorem ipsum sit amet</p>
-                </div>
-              </div>
-            </div></div>
-          <div class='slide'>
-            <div class="media">
-              <img src="assets/musician5.jpeg" alt="">
-            </div>
-            <div class="card-sections">
-              <div class="upper-section">
-                <div class="wishlist"><i class='bx bx-heart' ></i></div>
-              </div>
-              
-              <div class="lower-section">
-                <div class="card-caption">
-                    <h4 class="artist-name">Lorem Ipsum</h4>
-                    <p class="category">Category: Headliner</p>
-                    <p class="info">Extra info: lorem ipsum sit amet</p>
-                </div>
-              </div>
-              
-            </div>
-          </div> --}}
+         
         
           <div class="slider-content-background"></div>
         </div>
