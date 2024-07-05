@@ -453,3 +453,89 @@ a.click-div {
 #newMatchButton {
   display: none;
 }
+
+
+  /* ----------------- MATCHUPS  ---------------- */
+
+  .matchups-container{
+    display: flex; 
+    flex-wrap: wrap; /* Allow items to wrap if they exceed the container width */
+    justify-content: center; 
+    gap: 4rem; 
+    margin: 3rem auto; 
+    padding: 1rem; 
+  }
+  
+  .matchup-block{
+    max-width: 500px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    /* align-items: center;  */
+    gap: 0.7rem;
+  }
+  
+  .info-matchup {
+    flex: 1;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: flex 1s ease-in-out;
+  }
+  
+  .info-matchup:hover{
+    flex: 3;
+  }
+  
+  .info-matchup img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .position-vote{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 1rem 0.5rem;
+  }
+  
+  .total-votes{
+    background: rgba(0, 0, 0, 0.5);
+    color: var(--primary-clear);
+    padding: 0.8rem 0.9rem;
+    font-size: 1.2rem;
+    border-radius: 50%;
+  }
+  
+  .middle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .middle h3{
+    margin: 0;
+  }
+  
+  .votes{
+    width: 100%;
+    position: absolute; 
+    bottom: -100%; 
+    left: 0;
+    transition: bottom 1s ease-in-out;
+    text-align: center;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  .info-matchup:hover .votes{
+    bottom: 0;
+  }
+  
+  .votes span{
+    display: inline-block;
+    padding: 1rem;
+    text-shadow: 1px 1px 3px #5a5a5a35;
+  }
