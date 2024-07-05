@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   voteButtons.forEach(button => {
     button.addEventListener('click', async (event) => {
-      const button = event.target;
+      const button = event.target.closest('.votes'); // Ensure the correct element is targeted
       const matchupId = button.dataset.matchup;
       const voteType = button.id.split('-')[1]; // 'a' or 'b'
 
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('You have already voted in this matchup.');
         return;
       }
-      console.log("fetch done");
+
       // Ask for confirmation before proceeding
       const confirmed = confirm('Are you sure you want to vote for this artist?');
       if (!confirmed) {
@@ -31,7 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
           body: JSON.stringify({ matchupId, voteType }),
         });
 
-
         if (!response.ok) {
           throw new Error('Error updating votes');
         }
@@ -42,9 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update the vote count in the DOM
         let voteCountElement;
         if (voteType === 'a') {
-          voteCountElement = button.closest('div').querySelector(`p:nth-of-type(1) .votes-count`);
+          voteCountElement = button.closest('.info-matchup').querySelector('.total-votes');
         } else {
-          voteCountElement = button.closest('div').querySelector(`p:nth-of-type(2) .votes-count`);
+          voteCountElement = button.closest('.info-matchup').querySelector('.total-votes');
         }
 
         let currentVotes = parseInt(voteCountElement.textContent, 10);
