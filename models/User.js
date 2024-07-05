@@ -37,6 +37,9 @@ User.init(
         len: [8],
       },
     },
+    isAdmin: {
+      type: DataTypes.BOOLEAN
+    }
   },
   {
     hooks: {

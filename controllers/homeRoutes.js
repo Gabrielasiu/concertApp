@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Concert, User, Matchup } = require('../models');
+const { Concert, User, Matchup, Admin } = require('../models');
 const withAuth = require('../utils/auth');
 
 router.get('/', async (req, res) => {
@@ -94,7 +94,6 @@ console.log(matchupData)
 
     // Serialize data so the template can read it
     const matchups = matchupData.map((matchup) => matchup.get({ plain: true }));
-
     // Pass serialized data and session flag into template
     res.render('matchup', {
       matchups,
@@ -132,5 +131,3 @@ console.log("conciertos", concerts[0])
 
 module.exports = router;
 
-
-//VIENDO SI PODEMOS POSTEAR EL ARTISTA EN LA GALERIA atraves de insomnia 
