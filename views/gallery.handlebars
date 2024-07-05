@@ -1,54 +1,37 @@
-{{!-- <div class="text-center">
-  <h2>{{name}}</h2>
-  <p>{{{get_emoji}}}</p>
-  <p>{{description}}</p>
-  <p>Created by {{user.name}} on {{format_date date_created}}</p>
-  <p>
-    <span for="img" aria-label="money">💲</span>
-    <span class="dollar-amount">{{format_amount needed_funding}}</span>
-    needed
-  </p>
-  <p>
-    <button class="btn btn-primary">Fund this Project!</button>
-  </p>
-</div> --}}
+
 <h3 class="text-center">Select <span id="option">2</span> options to create a new matchup</h3>
-    <div  class="container align-middle">
-        <div class="row justify-content-center">
+<div  class="container align-middle">
+  <div class="row justify-content-center">
     <div class="slider-container">
-        <div class="left-arrow"><i class='bx bxs-chevron-left' style="font-size:35px"></i></div>
-        <div class="slider-content" id='slider-content'>
-              
-              
-            {{#each concerts as |concert|}}
-          <div class='slide'>
-            <div class="media">
-              <img src={{concert.image}} alt="">
+      <div class="left-arrow"><i class='bx bxs-chevron-left' style="font-size:35px"></i></div>
+      <div class="slider-content" id='slider-content'>
+        
+        {{#each concerts as |concert|}}
+        <div class='slide'>
+          <div class="media"><img src={{concert.image}} alt=""></div>
+          <div class="card-sections">
+            <div class="upper-section">
+              <div class="wishlist" id={{concert.id}} data-artist ='{{concert.artist}}' data-isSelected="false" ><i class='bx bxs-heart'></i></div>
             </div>
-            <div class="card-sections">
-              <div class="upper-section">
-                <div class="wishlist" id={{concert.id}} data-artist ='{{concert.artist}}' data-isSelected="false" ><i class='bx bxs-heart'></i></div>
-              </div>
-              <div class="lower-section">
-                <div class="card-caption">
-                  <h4 class="artist-name">{{concert.artist}}</h4>
-                  <p class="info">{{concert.description}}</p>
-                </div>
+            <div class="lower-section">
+              <div class="card-caption">
+                <h4 class="artist-name">{{concert.artist}}</h4>
+                <p class="info">{{concert.description}}</p>
               </div>
             </div>
           </div>
-         {{/each}}
-
-         
-        
-          <div class="slider-content-background"></div>
         </div>
-        <div class="right-arrow"><i class='bx bxs-chevron-right' style="font-size:35px"></i></div>
+        {{/each}}
+       
+        <div class="slider-content-background"></div>
       </div>
-               <button type="button" id="newMatchButton" class="btn btn-info py-3 px-4 mb-5" >Create new matchup!</button>
-
+      <div class="right-arrow"><i class='bx bxs-chevron-right' style="font-size:35px"></i></div>
     </div>
+    
+    <button type="button" id="newMatchButton" class="btn btn-info py-3 px-4 mb-5" style="font-size: 1.5rem;" >Create new matchup!</button>
+  
+  </div>
 </div>
 
-      <script src="js/script.js"></script>
-      <script src="js/gallery.js"></script>
+<script src="js/script.js"></script>
+<script src="js/gallery.js"></script>
