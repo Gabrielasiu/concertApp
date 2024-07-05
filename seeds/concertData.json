@@ -1,102 +1,82 @@
 [
   {
     "artist": "Niall Horan",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/NiallHoran.jpeg"
   },
   {
     "artist": "P!nk",
-    "description": "Lorem Ipsum sit amet",
     "image": "./assets/Pink.jpeg"
   },
   {
     "artist": "Imagine Dragons",
-    "description": "Lorem Ipsum sit amet",
     "image": "./assets/ImagineDragons.jpeg"
   },
   {
     "artist": "Post Malone",
-    "description": "Lorem Ipsum sit amet",
     "image" :"./assets/PostMalone.jpeg"
   },
   {
     "artist": "Luke Combs",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/LukeCombs.jpeg"
   },
   {
     "artist": "Junior H",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/JuniorH.jpeg"
   },
   {
     "artist": "Peso Pluma",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/PesoPluma.jpeg"
   },
   {
     "artist": "Danny Ocean",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/DannyOcean.jpeg"
   },
   {
     "artist": "Shakira",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/Shakira.jpeg"
   },
   {
     "artist": "Ludacris",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/Ludacris.jpeg"
   },
   {
     "artist": "Janet Jackson",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/JanetJackson.jpeg"
   },
   {
     "artist": "Taylor Swift",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/TaylorSwift.jpeg"
   },
   {
     "artist": "Blink-182",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/Blink182.jpeg"
   },
   {
     "artist": "Feid",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/Feid.jpeg"
   },
   {
     "artist": "Fuerza Regida",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/FuerzaRegida.jpeg"
   },
   {
     "artist": "Sabrina Carpenter",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/SabrinaCarpenter.jpeg"
   },
   {
     "artist": "Cigarettes After Sex",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/CAS.jpeg"
   },
   {
     "artist": "Billie Eilish",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/BillieEilish.jpeg"
   },
   {
     "artist": "Childish Gambino",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/ChildishGambino.jpeg"
   },
   {
     "artist": "Chayanne",
-    "description": "Lorem Ipsum sit amet",
     "image":"./assets/Chayanne.jpeg"
   }
 ]

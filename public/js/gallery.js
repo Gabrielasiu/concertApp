@@ -27,9 +27,12 @@ heartButton.forEach(button => {
                 spanOption.textContent = Number(spanOption.textContent) - 1
                 if (selectedCounter === 1) {
                     matchupBody.artistA = button.dataset.artist
+                    matchupBody.imageA = button.dataset.image
+                    console.log(matchupBody);
                 }
                 if (selectedCounter === 2) {
                     matchupBody.artistB = button.dataset.artist
+                   matchupBody.imageB = button.dataset.image
                 }
                 //hhacer eso para imagenes
                 //seguir la logica de esta 
@@ -43,7 +46,6 @@ heartButton.forEach(button => {
             spanOption.textContent = Number(spanOption.textContent) + 1
         }
         if (selectedCounter === 2) {
-            console.log(matchupBtn)
             matchupBtn.style.display = "block"
         } else {
             matchupBtn.style.display = "none"

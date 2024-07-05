@@ -3,31 +3,16 @@
         "artistA": "Imagine Dragons",
         "artistB": "Blink-182",
         "votesA": "22",
-        "votesB": "20"
+        "votesB": "20",
+        "imageA": "./assets/ImagineDragons.jpeg",
+        "imageB": "./assets/Blink182.jpeg"
     },
     {
         "artistA": "Shakira",
-        "artistB": "Beyonce",
+        "artistB": "Taylor Swift",
         "votesA": "27",
-        "votesB": "30"
-    },
-    {
-        "artistA": "Peso Pluma",
-        "artistB": "Junior H",
-        "votesA": "22",
-        "votesB": "20"
-    },
-    {
-        "artistA": "Taylor Swift",
-        "artistB": "Sabrina Carpenter",
-        "votesA": "3300",
-        "votesB": "2000"
-    },
-    {
-        "artistA": "Twenty One Pilots",
-        "artistB": "Linkin Park",
-        "votesA": "3300",
-        "votesB": "2000"
+        "votesB": "30",
+        "imageA": "./assets/Shakira.jpeg",
+        "imageB":"./assets/TaylorSwift.jpeg"    
     }
-
 ]

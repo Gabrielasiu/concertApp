@@ -36,6 +36,12 @@ Matchup.init(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
+        imageA: {
+            type: DataTypes.STRING,
+        },
+        imageB: {
+            type: DataTypes.STRING,
+        }
     },
     {
         sequelize,
