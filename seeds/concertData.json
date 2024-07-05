@@ -1,128 +1,102 @@
 [
   {
     "artist": "Niall Horan",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "image":"./assets/musician1.jpeg"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/NiallHoran.jpeg"
   },
   {
     "artist": "P!nk",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "image": "./assets/musician2.jpeg"
+    "description": "Lorem Ipsum sit amet",
+    "image": "./assets/Pink.jpeg"
   },
   {
     "artist": "Imagine Dragons",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "image": "./assets/musician3.jpeg"
+    "description": "Lorem Ipsum sit amet",
+    "image": "./assets/ImagineDragons.jpeg"
   },
   {
     "artist": "Post Malone",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "image" :"./assets/musician4.jpeg"
+    "description": "Lorem Ipsum sit amet",
+    "image" :"./assets/PostMalone.jpeg"
   },
   {
     "artist": "Luke Combs",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "image":"./assets/musician5.jpeg"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/LukeCombs.jpeg"
   },
   {
     "artist": "Junior H",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$58.00- $330.00",
-    "date": "July 19th 2024",
-    "location": "Chula Vista, CA"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/JuniorH.jpeg"
   },
   {
     "artist": "Peso Pluma",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$58.00- $330.00",
-    "date": "September 5th 2024",
-    "location": "Chula Vista, CA"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/PesoPluma.jpeg"
   },
   {
     "artist": "Danny Ocean",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$39.00- $300.00",
-    "date": "September 27th 2024",
-    "location": "San Siego, CA"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/DannyOcean.jpeg"
   },
   {
     "artist": "Shakira",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$171.00- $297.00",
-    "date": "November 30th 2024",
-    "location": "Toronto, ON"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/Shakira.jpeg"
   },
   {
     "artist": "Ludacris",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$39.00-79.00",
-    "date": "July 19th 2024",
-    "location": "Chandle, AZ"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/Ludacris.jpeg"
   },
   {
     "artist": "Janet Jackson",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$38.00- $499.00",
-    "date": "July 29th 2024",
-    "location": "Boston, MA"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/JanetJackson.jpeg"
   },
   {
     "artist": "Taylor Swift",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$58.00- $330.00",
-    "date": "October 19th 2024",
-    "location": "Miami, FL"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/TaylorSwift.jpeg"
   },
   {
     "artist": "Blink-182",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$58.00- $330.00",
-    "date": "July 3rd 2024",
-    "location": "Las Vegas, NV"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/Blink182.jpeg"
   },
   {
-    "artist": "FEIDD",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$58.00- $330.00",
-    "date": "July 19th 2024",
-    "location": "Orlando, FL"
+    "artist": "Feid",
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/Feid.jpeg"
   },
   {
     "artist": "Fuerza Regida",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$58.00- $330.00",
-    "date": "July 1st 2024",
-    "location": "Seattle, WA"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/FuerzaRegida.jpeg"
   },
   {
     "artist": "Sabrina Carpenter",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "image":"./assets/musician1.jpeg"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/SabrinaCarpenter.jpeg"
   },
   {
     "artist": "Cigarettes After Sex",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "image":"./assets/musician1.jpeg"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/CAS.jpeg"
   },
   {
     "artist": "Billie Eilish",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$89.00- $530.00",
-    "date": "October 11th 2024",
-    "location": " Boston, MA"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/BillieEilish.jpeg"
   },
   {
     "artist": "Childish Gambino",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$55.00- $430.00",
-    "date": "November 13th 2024",
-    "location": "Berlin, DE"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/ChildishGambino.jpeg"
   },
   {
     "artist": "Chayanne",
-    "description": "A mobile app that will send you notifications whenever a concert is playing in your area.",
-    "cost":"$67.00- $197.00",
-    "date": "November 13th 2024",
-    "location": "Boston, MA"
+    "description": "Lorem Ipsum sit amet",
+    "image":"./assets/Chayanne.jpeg"
   }
 ]
