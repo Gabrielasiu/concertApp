@@ -21,7 +21,7 @@ heartButton.forEach(button => {
 
         if (button.dataset.isselected === "false") {
             if (selectedCounter < 2) {
-                button.style.color = "black"
+                button.style.color = "red"
                 button.dataset.isselected = "true"
                 selectedCounter++
                 spanOption.textContent = Number(spanOption.textContent) - 1
