@@ -6,13 +6,5 @@
         "votesB": "20",
         "imageA": "./assets/ImagineDragons.jpeg",
         "imageB": "./assets/Blink182.jpeg"
-    },
-    {
-        "artistA": "Shakira",
-        "artistB": "Taylor Swift",
-        "votesA": "27",
-        "votesB": "30",
-        "imageA": "./assets/Shakira.jpeg",
-        "imageB":"./assets/TaylorSwift.jpeg"    
     }
 ]
