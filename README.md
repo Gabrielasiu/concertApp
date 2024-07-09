@@ -41,9 +41,9 @@ To visit and review our project, [click here](https://github.com/Gabrielasiu/con
 ## Visual reference of project
 The following image demonstrates the app's appearance:
 
-![short technical description of the app)](./Assets/images/challenge_appReference.gif)
+![short technical description of the app)](./assets/challenge_appReference.gif)
 
-![](./Assets/challenge_appReference.gif)
+![](./assets/challenge_appReference.gif)
 
 ## License
 ![GitHub](https://img.shields.io/github/license/VanZittle/V-logoGenerator?style=for-the-badge)<br> Go to license [here](https://github.com/VanZittle/V-logoGenerator/blob/main/LICENSE)
