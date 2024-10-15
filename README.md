@@ -1,4 +1,4 @@
-## PROJECT 2: Interactive Full-Stack Application - ConcertMatchup
+## Interactive Full-Stack Application - ConcertMatchup
 
 The primary goal of this application is to enable event organizers to gauge public interest in various artists through polls. By collecting and analyzing this data, organizers can tailor their event lineups to match audience preferences, ensuring higher satisfaction and attendance.
 
@@ -36,15 +36,14 @@ THEN I get an alert modal mentioning that I already have voted and that vote wil
 
 ## Go to our project
 
-To visit and review our project, [click here]([https://github.com/Gabrielasiu/concertApp/](https://concertapp.onrender.com/login))
+To visit and review our project, [click here](https://concertapp.onrender.com/login)
 
 ## Visual reference of project
 The following image demonstrates the app's appearance:
 
-![short technical description of the app)](Assets/challenge_appReference.gif)
+![short technical description of the app)](assets/challenge_appReference.gif)
 
-![](./Assets/challenge_appReference.gif)
-![](./public/assets/challenge_appReference.gif)
+![](./assets/challenge_appReference.gif)
 
 ## License
 ![GitHub](https://img.shields.io/github/license/VanZittle/V-logoGenerator?style=for-the-badge)<br> Go to license [here](https://github.com/VanZittle/V-logoGenerator/blob/main/LICENSE)
